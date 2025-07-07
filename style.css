@@ -16,7 +16,7 @@ body {
 
 .cartao {
     margin: 1rem 1rem;
-    height: 10rem;
+    height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
 }
@@ -28,6 +28,12 @@ body {
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
+}
+
+.cartao__conteudo p{
+    margin-top: 1rem;
+    padding: 2rem;
+    margin-top: 5rem;
 }
 
 .cartao__conteudo__pergunta p {
@@ -60,16 +66,14 @@ body {
 .cartao__conteudo__pergunta,
 .cartao__conteudo__resposta{
     backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
-
-
-
-
-
-
-
-
+.cartao__conteudo__resposta{
+    transform: rotateY(180deg);
+}
 
 
 footer {
